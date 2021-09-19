@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: techfest
+spec:
+  selector:
+    matchLabels:
+      app: techfest
+      tier: frontend
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: techfest
+        tier: frontend
+    spec:
+      containers:
+      - name: techfest
+        image: nginx
+        ports:
+        - containerPort: 80 
