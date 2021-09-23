@@ -1,2 +1,2 @@
 # fluxapps
-Applictions for Flux demo
+Basic Kubernetes config files for Flux demo
