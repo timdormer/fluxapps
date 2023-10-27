@@ -8,7 +8,7 @@ spec:
     matchLabels:
       app: techfest
       tier: frontend
-  replicas: 6
+  replicas: 2
   template:
     metadata:
       labels:
